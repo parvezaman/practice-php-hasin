@@ -18,4 +18,13 @@ $product *=$n;
 if ($n>1) {
     goto decrement_n;
 }
-echo "factorial of {$number} = ".$product;
+echo "factorial of {$number} = ".$product.PHP_EOL;
+
+
+// calculating factorial with for loop
+
+for ($i=$number, $factorial=1; $i >1 ; $i--) {
+    $factorial *= $i;
+}
+
+printf("Factorial of %d is %d".PHP_EOL, $number, $factorial);
