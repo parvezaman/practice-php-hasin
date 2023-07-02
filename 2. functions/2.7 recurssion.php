@@ -34,6 +34,7 @@ function fibonacci($old, $new, $end)
 {
     static $start;
     $start = $start ?? 1;
+    /* The line $start = $start ?? 1; is using the null coalescing operator ?? to initialize $start with a value of 1 if it is currently null or undefined. */
     if ($start > $end) {
         return;
     }
